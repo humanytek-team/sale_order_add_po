@@ -8,7 +8,7 @@
             <field name="partner_id" position="after">
                 <field name='require_po' invisible="1"/>
                 <field name="po" attrs="{'required': [('require_po','=', True)]}"/>
-            </field>            
+            </field>
         </field>
     </record>
 </odoo>
