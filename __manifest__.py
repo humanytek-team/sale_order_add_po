@@ -20,7 +20,7 @@
 
 {
     'name': 'Sale Order add PO',
-    'version': '1.1.2',
+    'version': '1.1.3',
     'author': 'Humanytek',
     'website': 'http://humanytek.com',
     'depends': [
@@ -29,6 +29,7 @@
     ],
     'data': [
         'reports/sale_order.xml',
+        'reports/account_invoice.xml',
         'views/sale_order.xml',
         'views/res_partner.xml',
     ]
