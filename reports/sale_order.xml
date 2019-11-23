@@ -5,10 +5,12 @@
         </t>
     </template>
     <template id="account_report_remove_products" inherit_id="account.report_invoice_document">
-        <t t-if="not line.display_type" name="account_invoice_line_accountable" position="replace">
+        <t t-if="not line.display_type" position="replace">
         </t>
         <h2 position="after">
-            <h3> PO: <span t-field="o.po"/> </h3>
+            <h3>
+                PO: <span t-field="o.po"/>
+            </h3>
         </h2>
     </template>
 </odoo>
