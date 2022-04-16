@@ -1,4 +1,4 @@
-from odoo import fields, models, api
+from odoo import api, fields, models
 
 
 class AccountMove(models.Model):
@@ -8,7 +8,10 @@ class AccountMove(models.Model):
         comodel_name="sale.order",
         compute="_get_sale_order_origin",
     )
-    po = fields.Char(related="origin_id.po")
+    po = fields.Char(
+        related="origin_id.po",
+        store=True,
+    )
 
     @api.depends("invoice_origin")
     def _get_sale_order_origin(self):
