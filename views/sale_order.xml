@@ -5,10 +5,10 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <field name="partner_id" position="after">
-                <field name='require_po' invisible="1"/>
-                <field name="po" attrs="{'required': [('require_po','=', True)]}"/>
-            </field>
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="require_po" modifiers="{'invisible': True}"/>
+                <field name="po" modifiers="{'required': [('require_po', '=', True)]}"/>
+            </xpath>
         </field>
     </record>
 </odoo>
