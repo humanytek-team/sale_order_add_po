@@ -33,4 +33,5 @@
         "views/sale_order.xml",
         "views/res_partner.xml",
     ],
+    "installable": False,
 }
