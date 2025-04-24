@@ -20,7 +20,7 @@
 
 {
     "name": "Sale Order add PO",
-    "version": "15.0.3.1.3",
+    "version": "3.1.3",
     "author": "Humanytek",
     "website": "http://humanytek.com",
     "depends": [
